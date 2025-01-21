@@ -1,0 +1,14 @@
+import random
+scelta = input("testa o croce?")
+numero = random.randint(1,2)
+
+if numero == 1 and scelta == "testa":
+    print("hai indovinato! è uscito testa")
+elif numero == 2 and scelta == "croce":
+    print("hai indovinato! è uscito croce")
+elif numero != 2 and scelta == "croce":
+    print("hai sbagliato! è uscito testa")
+elif numero != 1 and scelta == "testa":
+    print("Hai sbagliato! è uscito croce")
+else:
+    print("Scegli tra testa e croce per favore!!!")
